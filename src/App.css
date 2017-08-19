@@ -23,7 +23,7 @@
 }
 
 .links {
-  font-size: 2em;
+  font-size: 3em;
   margin: 0 auto;
   width: 25%;
   list-style: none;
@@ -101,10 +101,13 @@ footer {
 @media (max-width: 767px) {
   .header {
     font-size: 2.0em;
+    margin-bottom: 0;
+    padding-bottom: 10px;
   }
   .links {
-    font-size: 1.4em;
-    width: 60%;
+    font-size: 2.4em;
+    width: 70%;
+    border: solid 1px red;
   }
   .links li {
     margin-bottom: 10px;
@@ -113,5 +116,9 @@ footer {
 
 /* IPHONE 5 */
 @media (max-width: 358px) {
-
+  .links {
+    font-size: 1.8em;
+    width: 70%;
+    border: solid 1px red;
+  }
 }
