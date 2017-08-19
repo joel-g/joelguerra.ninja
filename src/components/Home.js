@@ -6,12 +6,12 @@ class Home extends Component {
   render() {
     return (
       <div className='home'>
-        <h1 className='header'>Joel Guerra</h1>
+        <marquee><h1 className='header'>Joel Guerra</h1></ marquee>
         <div>
           <ul className='links'>
             <li className='about-me'>about me</li>
             <li className='projects'>projects</li>
-            <li>resume</li>
+            <li className='resume'>resume</li>
           </ul>
         </div>
         <Footer />

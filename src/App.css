@@ -11,31 +11,61 @@
 
 .home {
   font-family: 'Comic Sans MS', 'Comic Sans', 'Comic', 'Delius', sans-serif;
-  border: solid 1px red;
 }
 
 .header {
-
-  text-decoration: underline;
   margin: 20px auto;
   padding: 20px;
   text-align: center;
   font-size: 3.0em;
   height: 100px;
   animation: color infinite 5s linear;
-  border: solid 1px red;
 }
 
 .links {
   font-size: 2em;
   margin: 0 auto;
-  border: solid 1px red;
   width: 25%;
   list-style: none;
 }
 
+.links:hover {
+  cursor: help;
+}
+
 .links li {
-  margin-right: 25px;
+  margin-right: 40px;
+  text-decoration: underline;
+  color: purple;
+}
+
+.about-me:before {
+  background-image: url(./images/man.png);
+}
+
+.projects:before {
+  background-image: url(./images/paint.png);
+  width: 25px;
+}
+
+.resume:before {
+  background-image: url(./images/letter.png);
+}
+
+.netscape {
+  background-image: url(./images/netscape.png);
+}
+
+.ie {
+  background-image: url(./images/ie.png);
+}
+
+.browser {
+  margin: 5px 5px 15px 5px;
+  width: 110px;
+  height: 39px;
+  display: inline-block;
+  background-size: cover;
 }
 
 li:before {
@@ -44,15 +74,15 @@ li:before {
   height: 25px;
   width: 20px;
   margin-right: 12px;
-  background-image: url(./images/letter.png);
   background-size: cover;
 }
 
-.footer {
+footer {
+  font-family: serif;
   position: fixed;
   bottom: 0;
   width: 100%;
-  border: solid 1px red;
+  margin-bottom: 15px;
 }
 
 @keyframes spin {
@@ -61,8 +91,8 @@ li:before {
 }
 
 @keyframes color {
-  0%   {color: red;}
-  25%  {color: teal;}
+  0%   {color: teal;}
+  25%  {color: cyan;}
   50%  {color: orange;}
   100% {color: purple;}
 }
@@ -71,6 +101,13 @@ li:before {
 @media (max-width: 767px) {
   .header {
     font-size: 2.0em;
+  }
+  .links {
+    font-size: 1.4em;
+    width: 60%;
+  }
+  .links li {
+    margin-bottom: 10px;
   }
 }
 
