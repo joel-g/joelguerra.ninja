@@ -107,10 +107,17 @@ footer {
   .links {
     font-size: 2.4em;
     width: 70%;
-    border: solid 1px red;
   }
   .links li {
     margin-bottom: 10px;
+  }
+  .browser {
+    margin: 2px;
+    width: 91px;
+    height: 32px;
+  }
+  .counter {
+    width: 35%;
   }
 }
 
@@ -118,7 +125,5 @@ footer {
 @media (max-width: 358px) {
   .links {
     font-size: 1.8em;
-    width: 70%;
-    border: solid 1px red;
   }
 }
