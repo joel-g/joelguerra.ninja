@@ -8,7 +8,7 @@ class Home extends Component {
       <div className='home'>
         <marquee><h1 className='header'>Joel Guerra</h1></ marquee>
         <div>
-          <ul className='links'>
+          <ul className='links' onClick={ e => this.props.clickHandler(e) }>
             <li className='about-me'>about me</li>
             <li className='projects'>projects</li>
             <li className='resume'>resume</li>
