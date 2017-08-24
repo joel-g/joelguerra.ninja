@@ -20,14 +20,14 @@ class App extends Component {
 
   render() {
     let display;
-    if (this.state.currentDisplay === 'home') {
+    if (this.state.currentDisplay === 'home' || this.state.currentDisplay === "<-- BACK") {
       display = <Home clickHandler={e => this.navClickHandler(e)}/>
     } else if (this.state.currentDisplay === 'about me') {
-      display = <About />
+      display = <About clickHandler={e => this.navClickHandler(e)}/>
     } else if (this.state.currentDisplay === 'projects') {
-      display = <Projects />
+      display = <Projects clickHandler={e => this.navClickHandler(e)}/>
     } else if (this.state.currentDisplay === 'resume') {
-      display = <Resume />
+      display = <Resume clickHandler={e => this.navClickHandler(e)}/>
     };
     return (
       display
