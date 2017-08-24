@@ -77,6 +77,15 @@ li:before {
   background-size: cover;
 }
 
+.back {
+  float: left;
+  margin: 50px;
+  background-color: transparent;
+  border: none;
+  color: purple;
+  font-size: 1.4em;
+}
+
 footer {
   font-family: serif;
   position: fixed;
