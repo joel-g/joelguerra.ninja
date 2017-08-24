@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Back from './Back';
 import '../App.css';
 
-function Projects(){
-  return(
-    <article>
+class Projects extends Component{
+  render() {
+    return(
+      <article>
+      <Back clickHandler={e => this.props.clickHandler(e)}/>
       Projects
-    </article>
-  )
+      </article>
+    )
+  }
 }
 
 export default Projects;
