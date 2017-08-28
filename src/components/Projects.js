@@ -8,6 +8,13 @@ class Projects extends Component{
       <article>
       <Back clickHandler={e => this.props.clickHandler(e)}/>
       Projects
+      <div className='menu'>
+      </div>
+
+
+      
+
+
       </article>
     )
   }
