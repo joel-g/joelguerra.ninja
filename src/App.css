@@ -63,12 +63,19 @@
 }
 
 .scroll {
+  color: blue;
   font-style: Papyrus;
-  height: 624px;
-  width: 600px;
+  padding: 80px 20px;
+  height: 484px;
+  width: 560px;
   background-image: url(./images/scroll.gif);
   background-size: cover;
   margin: 40px auto;
+}
+
+.scroll-content {
+  margin: 30px 70px;
+  text-align: left
 }
 
 .ie {
@@ -94,12 +101,13 @@ li:before {
 
 .back {
   position: absolute;
-  left: 20px;
-  margin: 50px;
+  left: 80px;
+  margin: 50px 0;
   background-color: transparent;
   border: none;
   color: purple;
   font-size: 1.4em;
+  text-decoration: underline;
 }
 
 .bottom {
@@ -133,10 +141,26 @@ footer {
 
 /*GOOD PHONES*/
 @media (max-width: 767px) {
+  .about-header{
+    font-size: 1.5em;
+  }
+  .scroll {
+    padding: 40px 10px;
+    height: 242px;
+    width: 280px;
+  }
+  .scroll-content {
+    margin: 15px 30px;
+  }
   .header {
     font-size: 2.0em;
     margin-bottom: 0;
     padding-bottom: 10px;
+  }
+  .back {
+    left: 20px;
+    margin: 10px 0;
+    font-size: 1.0em;
   }
   .links {
     font-size: 2.4em;

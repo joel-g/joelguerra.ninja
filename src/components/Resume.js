@@ -8,9 +8,6 @@ class Resume extends Component {
       <article>
         <Back clickHandler={e => this.props.clickHandler(e)}/>
         Resume
-        <spdf.SimplePDF
-          file="./JoelGuerra _Resume5.pdf"
-          />
       </article>
     )
   }
