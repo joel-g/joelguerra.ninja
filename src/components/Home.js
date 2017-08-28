@@ -5,7 +5,7 @@ import '../App.css';
 class Home extends Component {
   render() {
     return (
-      <div className='home'>
+      <div className='comic'>
         <marquee><h1 className='header'>Joel Guerra</h1></ marquee>
         <div>
           <ul className='links' onClick={ e => this.props.clickHandler(e) }>
