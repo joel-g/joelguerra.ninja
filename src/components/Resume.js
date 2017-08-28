@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import spdf from "simple-react-pdf";
 import Back from './Back';
-import '../App.css';
 
 class Resume extends Component {
   render() {
