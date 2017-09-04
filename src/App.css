@@ -37,9 +37,6 @@
   margin: 0 auto;
   width: 40%;
   list-style: none;
-}
-
-.links:hover {
   cursor: pointer;
 }
 
@@ -102,6 +99,7 @@ li:before {
   color: purple;
   font-size: 1.4em;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .bottom {
