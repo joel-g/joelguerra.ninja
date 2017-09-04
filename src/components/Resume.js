@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import spdf from "simple-react-pdf";
+// import spdf from 'simple-react-pdf';
 import Back from './Back';
 
 class Resume extends Component {

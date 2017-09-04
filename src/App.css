@@ -62,10 +62,6 @@
   background-image: url(./images/letter.png);
 }
 
-.netscape {
-  background-image: url(./images/netscape.png);
-}
-
 .scroll {
   color: blue;
   font-style: Papyrus;
@@ -82,16 +78,11 @@
   text-align: left
 }
 
-.ie {
-  background-image: url(./images/ie.png);
-}
-
 .browser {
   margin: 5px 5px 15px 5px;
   width: 110px;
   height: 39px;
   display: inline-block;
-  background-size: cover;
 }
 
 li:before {
