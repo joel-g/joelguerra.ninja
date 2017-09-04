@@ -8,7 +8,7 @@ class Projects extends Component{
     return(
       <article className='projects-page'>
       <Back clickHandler={e => this.props.clickHandler(e)}/>
-      <StartMenu />
+
       </article>
     )
   }

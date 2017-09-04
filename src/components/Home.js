@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import Footer from './Footer';
+import Header from './Header';
 import '../App.css';
+import man from '../images/man.png'
 
 class Home extends Component {
   render() {
     return (
-      <div className='comic'>
-        <marquee><h1 className='header'>Joel Guerra</h1></ marquee>
-        <div>
+       <div>
+        <Header />
+        <div className='comic'>
           <ul className='links' onClick={ e => this.props.clickHandler(e) }>
             <li className='about-me'>about me</li>
             <li className='projects'>projects</li>
