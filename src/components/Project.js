@@ -6,7 +6,7 @@ class Project extends Component {
     return(
       <div className='project'>
         <div className='title cant'>
-        <img className='logo' src={this.props.logo} alt='framework logo' />{this.props.name}
+          <img className='logo' src={this.props.logo} alt='framework logo' />{this.props.name}
         </div>
         <img className='screenshot' src={this.props.screenShot} alt='' />
       </div>
