@@ -4,9 +4,11 @@ import '../Projects.css';
 class Project extends Component {
   render(){
     return(
-      <div>
-        <h2>{this.props.name}</h2>
-        <img className='screenshot' src={this.props.screenShot} />
+      <div className='project'>
+        <div className='title cant'>
+        <img className='logo' src={this.props.logo} alt='framework logo' />{this.props.name}
+        </div>
+        <img className='screenshot' src={this.props.screenShot} alt='' />
       </div>
     )
   }

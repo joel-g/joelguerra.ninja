@@ -4,7 +4,7 @@ import '../App.css';
 function Header() {
   return(
       <div>
-      <marquee><h1 className='header comic'>Joel Guerra</h1></ marquee>
+      <marquee><h1 className='header colorize comic'>Joel Guerra</h1></ marquee>
       </div>
   )
 }

@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Delius';
 
+
 @font-face {
   font-family: 'Comic';
   src: local('Comic'), url(./fonts/COMIC.TTF) format('tff');
@@ -29,6 +30,9 @@
   text-align: center;
   font-size: 3.0em;
   height: 100px;
+}
+
+.colorize {
   animation: color infinite 5s linear;
 }
 
