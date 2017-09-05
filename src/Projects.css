@@ -1,9 +1,15 @@
 @import 'https://fonts.googleapis.com/css?family=Cantarell:700i';
 
 .projects-container {
-  background-color: #fff;
-  margin: 0 100px;
-  padding: 50px;
+  margin: 0 50px;
+  padding: 20px;
+  background-color: #ffb7fd;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#5FCFE7), to(#C5FF73));
+  background: -webkit-radial-gradient(circle, #7cceff, #b77cff);
+  background: -moz-radial-gradient(circle, #7cceff, #b77cff);
+  background: -ms-radial-gradient(circle, #7cceff, #b77cff);
 }
 
 .screenshot {
@@ -17,6 +23,12 @@
   background-color: silver;
   padding: 5px;
   box-shadow: 7px 7px 10px;
+  border-radius: 3px;
+}
+
+.project:hover {
+  opacity: 0.6;
+
 }
 
 .logo {
@@ -33,4 +45,32 @@
 
 .cant {
   font-family: 'Cantarell', sans-serif;
+}
+
+.project-overlay {
+  position: relative;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+
+  transition: .5s ease;
+  margin: 0 auto;
+}
+
+.project-text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.project:hover .project-overlay {
+  width: 300px;
 }

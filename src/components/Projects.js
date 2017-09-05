@@ -39,7 +39,7 @@ class Projects extends Component {
           <Project name='Policewatch' screenShot={policewatchSS} logo={js} />
           <Project name='AnimalFactsBot' screenShot={animalfactsbotSS} logo={python} />
           <Project name='Stormyguerra' screenShot={stormyguerraSS} logo={reactlogo} />
-          <Project name='Lets Do Lunch' screenShot={stormyguerraSS} logo={android} />
+          <Project name='Lets Do Lunch' screenShot={android} logo={android} />
         </div>
       </article>
     )
