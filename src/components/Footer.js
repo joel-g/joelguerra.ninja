@@ -11,7 +11,7 @@ const Footer = () => (
         <img className='browser' src={netscape} alt='netscape logo' />
         <img className='browser' src={ie} alt='internet explorer logo' />
         <div className='overlay'>
-          <div className='slide-text'>Just kidding, Chrome is fine.</div>
+          <div className='slide-text'>{"Just kidding, Chrome is fine."}</div>
         </div>
       </div>
       <div>
