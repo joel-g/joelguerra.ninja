@@ -4,8 +4,7 @@ import '../Footer.css';
 import netscape from '../images/netscape.png'
 import ie from '../images/ie.png'
 
-function Footer(){
-  return(
+const Footer = () => (
     <footer>
       Best viewed with <br />
       <div className='slide-container'>
@@ -19,7 +18,6 @@ function Footer(){
         <a href='http://www.free-website-hit-counter.com'><img className='counter' src='http://www.free-website-hit-counter.com/c.php?d=9&id=103686&s=1' alt='hit counter' title='free website hit counter' /></a><br / ><small><a href='http://www.free-website-hit-counter.com' title="free website hit counter">Free website hit counter</a><br />{'© Joel Guerra 1998'}</small>
       </div>
     </footer>
-  )
-}
+  );
 
 export default Footer;
