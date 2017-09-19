@@ -25,6 +25,11 @@ class App extends Component {
   }
 
   render() {
+    if (this.state.retro) {
+      $('body').addClass('gradient')
+    } else {
+      $('body').removeClass('gradient')
+    }
     let display;
     if (this.state.currentDisplay === 'home' || this.state.currentDisplay === "<-- BACK") {
       display = <Home retroifier={e => this.retroifier(e) } retro={this.state.retro} clickHandler={e => this.navClickHandler(e)} />

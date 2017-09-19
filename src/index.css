@@ -3,6 +3,9 @@ body {
   padding: 0;
   font-family: sans-serif;
   text-align: center;
+}
+
+.gradient {
   background-color: #2F2727;
   background-position: center center;
   background-repeat: no-repeat;
