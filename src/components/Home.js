@@ -10,12 +10,15 @@ class Home extends Component {
 
   render() {
     let message;
+    let footer;
+    let header = <div><h1>Joel Guerra</h1></div>
     if (this.props.retro) {
-
+      footer = <Footer />
+      header = <Header />
     }
     return (
        <div>
-        <Header />
+        {header}
         <ToggleButton className='toggle'
           value={ this.props.retro }
           onToggle={ e => this.props.retroifier(e)} />
@@ -27,7 +30,7 @@ class Home extends Component {
             <li className='resume'>resume</li>
           </ul>
         </div>
-        <Footer />
+        {footer}
       </div>
     )
   }
