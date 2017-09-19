@@ -12,6 +12,7 @@ class Project extends Component {
           </div>
         </div>
         <img className='screenshot' src={this.props.screenShot} alt='' />
+        <div><a href={this.props.url}>{this.props.url}</a></div>
       </div>
     )
   }

@@ -35,11 +35,11 @@ class Projects extends Component {
         <Back clickHandler={e => this.props.clickHandler(e)}/>
         <h1 className='header cant'>Projects</h1>
         <div className='projects-container'>
-          <Project name='Whiteboardr' screenShot={whiteboardrSS} logo={ruby} />
-          <Project name='Policewatch' screenShot={policewatchSS} logo={js} />
-          <Project name='AnimalFactsBot' screenShot={animalfactsbotSS} logo={python} />
-          <Project name='Stormyguerra' screenShot={stormyguerraSS} logo={reactlogo} />
-          <Project name='Lets Do Lunch' screenShot={android} logo={android} />
+          <Project name='Whiteboardr' screenShot={whiteboardrSS} logo={ruby} url='http://whiteboardr.herokuapp.com' />
+          <Project name='Policewatch' screenShot={policewatchSS} logo={js} url='http://policewatch.herokuapp.com' />
+          <Project name='AnimalFactsBot' screenShot={animalfactsbotSS} logo={python} url='http://reddit.com/u/AnimalFactsBot' />
+          <Project name='Stormyguerra' screenShot={stormyguerraSS} logo={reactlogo} url='http://stormyguerra.com' />
+          <Project name='Lets Do Lunch' screenShot={android} logo={android} url='http://github.com/joel-g/lets-do-lunch' />
         </div>
       </article>
     )
