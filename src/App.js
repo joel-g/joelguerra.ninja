@@ -11,18 +11,23 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      retro: false,
       currentDisplay: 'home'
     }
   }
 
   navClickHandler(e){
-    this.setState({currentDisplay: $(e.target).text()})
+    this.setState({ currentDisplay: $(e.target).text() })
+  }
+
+  retroifier(e){
+    this.setState({ retro: !this.state.retro })
   }
 
   render() {
     let display;
     if (this.state.currentDisplay === 'home' || this.state.currentDisplay === "<-- BACK") {
-      display = <Home clickHandler={e => this.navClickHandler(e)}/>
+      display = <Home retroifier={e => this.retroifier(e) } retro={this.state.retro} clickHandler={e => this.navClickHandler(e)} />
     } else if (this.state.currentDisplay === 'about me') {
       display = <About clickHandler={e => this.navClickHandler(e)}/>
     } else if (this.state.currentDisplay === 'projects') {

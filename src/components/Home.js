@@ -7,25 +7,19 @@ import ToggleButton from 'react-toggle-button'
 
 
 class Home extends Component {
-  constructor() {
-    super();
-    this.state = {
-      retro: false
-    }
-  }
 
   render() {
+    let message;
+    if (this.props.retro) {
+
+    }
     return (
        <div>
         <Header />
-        <ToggleButton
-  value={ this.state.retro }
-  onToggle={(value) => {
-    this.setState({
-      retro: !value,
-    })
-  }} />
-
+        <ToggleButton className='toggle'
+          value={ this.props.retro }
+          onToggle={ e => this.props.retroifier(e)} />
+          {message}
         <div className='comic'>
           <ul className='links' onClick={ e => this.props.clickHandler(e) }>
             <li className='about-me'>about me</li>
