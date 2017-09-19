@@ -17,6 +17,7 @@ import python from '../images/python.jpg';
 import reactlogo from '../images/react.png';
 import android from '../images/android.jpg';
 
+
 class Projects extends Component {
   constructor() {
     super();
