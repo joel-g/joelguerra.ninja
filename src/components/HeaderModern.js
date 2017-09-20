@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../Modern.css';
 
 class Header extends Component {
 
   render() {
     return (
       <div>
-        <marquee><h1 className='header colorize comic'>{this.props.text}</h1></ marquee>
+        <h1 style={style} className='header'>{this.props.text}</h1>
       </div>
     )
   }
 };
+
+const style = {
+  fontStyle: 'italic'
+}
 
 export default Header;
