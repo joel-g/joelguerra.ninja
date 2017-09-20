@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
+import Header from './Header';
+import HeaderMod from './HeaderModern';
 import Back from './Back';
+import ToggleButton from 'react-toggle-button'
 import '../App.css';
 
 class About extends Component {
   render() {
+    let header;
+    if (this.props.retro) {
+      header = <Header text='About Joel' />
+    } else {
+      header = <HeaderMod text='About Joel' />
+    }
     return(
       <article>
         <Back clickHandler={e => this.props.clickHandler(e)}/>
-        <h1 className='about-header comic'>{"About Joel"}</h1>
+        {header}
+        <ToggleButton className='toggle'
+          value={ this.props.retro }
+          onToggle={ e => this.props.retroifier(e)} />
         <div className='scroll'>
           <div className='scroll-content'>
             <p>  {'Here is a short paragraph about Joel. It features words.'}

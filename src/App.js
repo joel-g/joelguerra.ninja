@@ -34,7 +34,7 @@ class App extends Component {
     if (this.state.currentDisplay === 'home' || this.state.currentDisplay === "<-- BACK") {
       display = <Home retroifier={e => this.retroifier(e) } retro={this.state.retro} clickHandler={e => this.navClickHandler(e)} />
     } else if (this.state.currentDisplay === 'about me') {
-      display = <About clickHandler={e => this.navClickHandler(e)}/>
+      display = <About retroifier={e => this.retroifier(e) } retro={this.state.retro} clickHandler={e => this.navClickHandler(e)}/>
     } else if (this.state.currentDisplay === 'projects') {
       display = <Projects clickHandler={e => this.navClickHandler(e)}/>
     } else if (this.state.currentDisplay === 'resume') {
