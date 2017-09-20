@@ -10,14 +10,13 @@ import ToggleButton from 'react-toggle-button'
 class Home extends Component {
 
   render() {
-    let message;
     let footer;
-    let header = <HeaderMod text='Joel Guerra'/>
+    let header;
     if (this.props.retro) {
       footer = <Footer />
       header = <Header text='Joel Guerra'/>
     } else {
-
+      header = <HeaderMod text='Joel Guerra'/>
     }
     return (
        <div>
